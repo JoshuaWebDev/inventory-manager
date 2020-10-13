@@ -29,4 +29,11 @@ class ProdutosRequest extends FormRequest
             'valor' => 'required|numeric'
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'nome.required' => 'The :attribute field can not be empty',
+        ];
+    }
 }
