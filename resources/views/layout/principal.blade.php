@@ -20,8 +20,16 @@
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/produtos">Produtos</a></li>
-                    <li><a href="/produtos/novo">Cadastrar</a></li>
+                    <li>
+                        <a href="{{action('ProdutoController@lista')}}">
+                            Produtos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{action('ProdutoController@novo')}}">
+                            Cadastrar
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

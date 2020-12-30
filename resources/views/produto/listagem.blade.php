@@ -25,7 +25,7 @@
         <td> {{ $p->descricao }} </td>
         <td> {{ $p->quantidade }} </td>
         <td>
-          <a href="/produtos/mostra/{{ $p->id }} ">
+          <a href="{{action('ProdutoController@mostra', $p->id)}} ">
             <span class="glyphicon glyphicon-search">
               <img src="/img/glyphicons-28-search.png" title="Ver detalhes" alt="Ver detalhes" />
             </span>
