@@ -53,6 +53,18 @@ class ProdutoController extends Controller
 			->withInput(Request::only('nome'));
 	}
 
+	public function editar($id) {
+		$produto = Produto::find($id);
+
+		return view('produto/editar')->with('p', $produto);
+	}
+
+	public function alterar(ProdutosRequest $request, $id) {
+		Produto::find($id)->update($request->all());
+
+		return redirect()->action('ProdutoController@lista');
+	}
+
 	public function remove($id) {
 		$produto = Produto::find($id);
 

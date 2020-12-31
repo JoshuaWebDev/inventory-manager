@@ -18,3 +18,7 @@ Route::get('/produtos/novo', 'ProdutoController@novo');
 Route::post('/produtos/adiciona', 'ProdutoController@adiciona');
 
 Route::get('/produtos/remove/{id}', 'ProdutoController@remove');
+
+Route::get('/produtos/editar/{id}', 'ProdutoController@editar');
+
+Route::post('/produtos/alterar/{id}', 'ProdutoController@alterar');

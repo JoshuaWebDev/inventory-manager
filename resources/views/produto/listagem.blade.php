@@ -34,7 +34,14 @@
         <td>
           <a href="{{action('ProdutoController@remove', $p->id)}} ">
             <span class="glyphicon glyphicon-trash">
-              <img src="/img/glyphicons-17-bin.png" title="Ver detalhes" alt="Ver detalhes" />
+              <img src="/img/glyphicons-17-bin.png" title="Apagar Registro" alt="Apagar Registro" />
+            </span>
+          </a>
+        </td>
+        <td>
+          <a href="{{action('ProdutoController@editar', $p->id)}}">
+            <span class="glyphicon glyphicon-edit">
+              <img src="/img/glyphicons-151-edit.png" title="Alterar Registro" alt="Alterar Registro" />
             </span>
           </a>
         </td>

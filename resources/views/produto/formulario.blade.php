@@ -18,7 +18,7 @@
     <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 
     <div class="form-group">
-        <labe>Nome</label>
+        <label>Nome</label>
         <input type="text" name="nome" class="form-control" value="{{ old('nome') }}" />
     </div>
     <div class="form-group">

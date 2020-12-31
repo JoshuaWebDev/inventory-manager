@@ -2,6 +2,7 @@
 
 namespace estoque\Http\Requests;
 
+//use estoque\Http\Requests\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProdutosRequest extends FormRequest
@@ -33,7 +34,9 @@ class ProdutosRequest extends FormRequest
     public function messages()
     {
         return [
-            'nome.required' => 'The :attribute field can not be empty',
+            'required' => 'O campo :attribute não pode ser vazio',
+            'max' => 'O campo :attribute contém no máximo :max caracteres',
+            'valor.numeric' => 'O campo :attribute deve ser um número'
         ];
     }
 }
